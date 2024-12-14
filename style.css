@@ -366,7 +366,7 @@ lox */
     height: 100vh;
     overflow: hidden;
     display: flex;
-    align-items:center;
+    align-items:right;
     justify-content:start;
 }
 
@@ -388,9 +388,9 @@ lox */
 .swiper-slide {
     flex-shrink: 0;
     scroll-snap-align: start;
-    width: 25%; 
+    width: 30%; 
     min-height: 50%;
-    height:fit-content;
+    height: 50%;
     margin: auto;
     background: white;
     border-radius: 50px;
@@ -398,7 +398,9 @@ lox */
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between 10px;
+    justify-content: space-between;
+    overflow-y: auto; /* Додає вертикальне гортання */
+    gap: 10px; /* Простір між елементами */
 }
 
 .slide-title {
@@ -411,7 +413,7 @@ lox */
     flex-grow: 1;
     margin: 20px 0;
     color: #666;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .slide-footer {
